@@ -9,32 +9,34 @@ body{
     justify-content: center;
 }
 #one {
+    justify-content: center;
     border-style:inset;
     border-width: 5px;
     border-color: rgb(146, 146, 153);
-    width: 400px;
-    height: 440px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    width: 30%;
+    height: 50%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    margin-left: 650px;
-    justify-content: center;
-   
-
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 40%;
+    margin-right: 50%;
+    place-items: center;
 }
 .box {
     border-style: inset;
     border-width: 3px;
-    width: 300px;
+    width: 70%;
     background-color: rgb(215, 215, 213);
-    margin-left: 45px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 17px;
+    align-items: center;
+    place-items: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 17;
     background-image: url(download\ \(1\).jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,22 +48,24 @@ h1 {
     font-family: fantasy;
     font-weight: 400;
     text-decoration:rgb(161, 161, 223) underline ;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 h2 {
     color: rgb(51, 19, 91);
 
 }
 #box1 {
-    margin-bottom: 10px;
-    color: brown;
+    margin-bottom: 8pxpx;
+    color: rgb(133, 17, 17);
     font-weight: 600;
+    font-size: 16px;
+    margin-top: 5%;
 
 }
 #box2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 5%;
+    margin-bottom: 2%;
 
 }
 hr {
@@ -76,24 +80,35 @@ a{
     color: blue;
 }
 #box3 {
-    color: brown;
-    font-weight: 600;
+    color: rgb(133, 17, 17);
+    font-weight: 900;
 }
 button{
-    width: 150px;
-    height: 25PX;
+    width: 50%;
+    height: 25%;
     background-color: rgb(108, 104, 98);
     opacity: 0.6;
     border-color: antiquewhite;
     font-weight: 900;
     color: rgb(149, 255, 0);
 }
+button:hover {
+    background-color:rgb(24, 10, 231);
+    cursor: pointer;
+}
+
 .field input{
     justify-content: center;
-    height: 25px;
+    height: 10%;
+    width: 60%;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: gray;
-    margin-bottom: 8px;
-    font-size: 15px;
+    margin-bottom: 5%;
+    font-size: 100%;
+}
+
+.field input:focus{
+    border-bottom-width:3px;
+    border-bottom-color: blue;
 }
