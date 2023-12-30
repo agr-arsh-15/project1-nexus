@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+   height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-image: url(download\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: inset;
+    border-color: grey;
+    border-width: 3px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1%;
+    margin: auto auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+}
+form {
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+    border-radius: 10%;
+    width: 70%;
+}
+label {
+    margin-bottom: 1%;
+    color: bisque;
+}
+input{
+    padding: 1%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    margin-bottom: 1%;
+    
+}
+button{
+    width: 45%;
+    margin: auto;
+    margin-top: 1%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: blue;
+    opacity: 0.5;
+    color: beige;
+    font-weight: 700;
+
+}
+#box1 {
+    color: bisque;
+    margin-top: 1%;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+
+}
+a {
+    color: rgb(106, 106, 250);
+    font-weight: 600;
+    text-decoration: none;
+}
+h1{
+    font-family: fantasy;
+    font-weight: 500;
+    text-decoration: grey underline;
+    margin-bottom: 1%;
+}
+h2 {
+    margin-bottom: 1%;
+    color: darkolivegreen;
+    font-weight: 600;
+}
+hr {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 1px;
+    background-color: grey;
+    
+
+}
+#image1 {
+    width: 20%;
+}
+#image2 {
+    width: 20%;
+}
+.link {
+    color: black;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:auto;
+}
