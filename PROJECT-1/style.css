@@ -21,18 +21,15 @@ body{
     background-image: url(download\ \(1\).jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-style: inset;
-    border-color: grey;
-    border-width: 3px;
+    border:3px inset grey;
     border-radius: 10px;
     text-align: center;
     padding: 1%;
     margin: auto auto;
-    padding-left: 2%;
-    padding-right: 2%;
     display: flex;
     flex-direction: column;  
     justify-content: center; 
+    align-items: center;
 }
 form {
     display:flex ;
@@ -44,7 +41,7 @@ form {
     background-size: cover;
     padding: 2%;
     border-radius: 10%;
-    width: 70%;
+    width: 60%;
 }
 label {
     margin-bottom: 1%;
@@ -58,7 +55,6 @@ input{
     align-items: center;
     margin: auto auto;
     margin-bottom: 1%;
-    
 }
 button{
     width: 45%;
@@ -71,15 +67,13 @@ button:hover{
     opacity: 0.5;
     color: beige;
     font-weight: 700;
-
 }
 #box1 {
     color: bisque;
     margin-top: 1%;
-    width: 50%;
+    width: 70%;
     margin: auto;
     margin-top: 1%;
-
 }
 a {
     color: rgb(106, 106, 250);
@@ -94,7 +88,7 @@ h1{
 }
 h2 {
     margin-bottom: 1%;
-    color: darkolivegreen;
+    color: rgb(248, 249, 245);
     font-weight: 600;
 }
 hr {
@@ -102,18 +96,24 @@ hr {
     margin-bottom: 1%;
     height: 1px;
     background-color: grey;
-    
-
 }
 #image1 {
-    width: 20%;
+    width: 25%;
 }
 #image2 {
-    width: 20%;
+    width: 25%;
 }
 .link {
     color: black;
     font-weight: 800;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin:auto;
+}
+@media (max-width:800px) {
+    #image1 {
+        width: 30%;
+    }
+    #image2 {
+        width: 30%;
+    }
 }
