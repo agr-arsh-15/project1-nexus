@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="project-1.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Sign Up</h1>
         <h2>It's free and only takes a minute!</h2>
-      <FORM class="box">
+      <FORM method="post" action="login.html">
         <label>Full Name</label>
-            <input type="text" placeholder="Full Name">
+        <input type="text" id="fullName" placeholder="Full Name" required>
         
         <label>Email-id</label>
-        <input type="email" placeholder="Email">
+        <input type="email" id="emailId" placeholder="Email" required>
         
-        <label>Contact no.</label>
-        <input type="number" placeholder="Contact no.">
+        <label> Contact no.</label>
+        <input type="number" id="contactNo" placeholder="Contact no." required>
         
         <label>Create password</label>
-        <input type="password" placeholder="Password">
+        <input type="password" id="createPassword" placeholder="Password" required>
         
         <label>Confirm password</label>
-        <input type="password" placeholder="Confirm password">
+        <input type="password" id="confirmPassword" placeholder="Confirm password" required>
         
-        <button>SIGN UP</button>
+        <button type="button" onclick="return validateSignup()">SIGN UP</button>
         <P id="box1"> By clicking on the sign-up button, you agree to our 
         <a href="#">terms n conditions</a> and <a href="#">privacy,policy </a></P>
        </FORM>
@@ -36,7 +37,7 @@
         <a href="https://accounts.google.com/servicelogin?hl=en-gb" target="_main"><img id="image1" src="download.png"> </a>
         <a href="https://www.facebook.com/login/" target="_main"><img id="image2" src="download.jpeg" ></a>
         </span>
-        <p class="link"> Already have an account? <a href="login.html">Login here</a></p>
+        <p class="link" onclick="link()"> Already have an account? <a href="login.html">Login here</a></p>
     </div>
     
 </body>

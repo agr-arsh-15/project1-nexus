@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="project-1.js"></script>
 </head>
 <body>
     <div class="container">
         <h1> LOGIN </h1>
-        <form class="box">
-            <label>username</label>
-            <input type="text" placeholder="Email">
-            <label>password</label>
-            <input type="password" placeholder="Password">
+        <form method="post" action="thankYou.html">
+            <label for="username">username</label>
+            <input type="text" id="username" placeholder="Email">
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            
         <div>
         <a href="">Forgot Password ?</a>
         </div>  
-            <button>LOGIN</button> 
+            <button type="button" onclick="return validateLogin()">LOGIN</button> 
         </form>
     <hr>
-        <p  class="link"> Don't have an account? <a href="signup(main).html">Sign-up here</a></p>
+        <p  class="link" onclick="link()"> Don't have an account? <a href="signup(main).html">Sign-up here</a></p>
     </div>
-    
+      
 </body>
 </html>

@@ -117,3 +117,8 @@ hr {
         width: 30%;
     }
 }
+.error-message {
+    color: #f3eeee;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
