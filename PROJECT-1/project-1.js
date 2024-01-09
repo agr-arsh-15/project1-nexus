@@ -5,9 +5,11 @@ function validateLogin() {
     if (username === '') {
         alert('username is mandatory...');
         document.getElementById('username').focus();
+        return false;
     } else if (password === '') {
         alert('password is mandatory...');
         document.getElementById('password').focus();
+        return false;
     } else {
         ('')
     }  
@@ -16,7 +18,7 @@ function validateLogin() {
     var storedPassword = localStorage.getItem("password");
 
         if (username === storedUsername && password === storedPassword) {
-            alert("Login successful!");
+            alert("Logged in successfully. THANK YOU!!!");
 
             document.getElementById("username").value = "";
             document.getElementById("password").value = "";
@@ -38,22 +40,28 @@ function validateSignup() {
     if (fullName === '') {
         alert('Full Name is mandatory...');
         document.getElementById('fullName').focus();
+        return false;
     } else if (emailId === '') {
         alert('Email-id is mandatory...')
         document.getElementById('emailId').focus();
+        return false;
     } else if (contactNo === '') {
         alert('Contact No. is mandatory...')
         document.getElementById('contactNo').focus();
+        return false;
     } else if (createPassword === '') {
         alert('Creating password is mandatory...')
         document.getElementById('createPassword').focus();
+        return false;
     } else if (confirmPassword === '') {
         alert('Confirming password is mandatory...')
         document.getElementById('confirmPassword').focus();
+        return false;
     } else if (createPassword !== confirmPassword) {
         alert('Passwords do not match')
         document.getElementById('confirmPassword').focus();
         document.getElementById('confirmPassword').select();
+        return false;
     } else {
         alert('Signed-up successfully. Login now!!')
     }
